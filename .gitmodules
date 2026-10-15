@@ -1,0 +1,23 @@
+# The GPL components of the xvm guest image, each at the exact upstream tag its build archive came
+# from (index.json maps archive sha256 -> tag -> commit). `update = none`: a recursive clone or
+# `git submodule update --init` skips them (each is a whole source tree; Linux is ~5 GB with history).
+# Fetch one on purpose:  git submodule update --init --checkout <path>   (shallow: depth 1)
+[submodule "linux"]
+	# tag v6.18.56 = 17ad2612c11a748b50d32eefc681344b26fea946 (fork of github.com/gregkh/linux)
+	path = linux
+	url = https://github.com/xuwaters/linux.git
+	shallow = true
+	update = none
+[submodule "busybox"]
+	# tag 1_37_0 = be7d1b7b1701d225379bc1665487ed0871b592a5 (fork of github.com/sailfishos-mirror/busybox,
+	# a mirror of git.busybox.net/busybox)
+	path = busybox
+	url = https://github.com/xuwaters/busybox.git
+	shallow = true
+	update = none
+[submodule "openjdk/jdk25u"]
+	# tag jdk-25.0.4-ga = 0b8bc780f976dab23ec798018fef0b674e885b0c (fork of github.com/openjdk/jdk25u)
+	path = openjdk/jdk25u
+	url = https://github.com/xuwaters/jdk25u.git
+	shallow = true
+	update = none
