@@ -20,8 +20,8 @@ and the small build-recipe files (kernel configuration and patches, scripts, ima
 | `linux/` | submodule: Linux, tag `v6.18.56`, commit `17ad2612c11a748b50d32eefc681344b26fea946` | <https://github.com/gregkh/linux> (Greg Kroah-Hartman's GitHub copy of kernel.org's `stable/linux.git`, which has the same tag and commit) |
 | `busybox/` | submodule: BusyBox, tag `1_37_0`, commit `be7d1b7b1701d225379bc1665487ed0871b592a5` | <https://github.com/sailfishos-mirror/busybox> (a mirror of the official `git.busybox.net/busybox`, same tag and commit; `github.com/mirror/busybox` stops at 1_36_1) |
 | `openjdk/jdk25u/` | submodule: OpenJDK 25 updates, tag `jdk-25.0.4-ga`, commit `0b8bc780f976dab23ec798018fef0b674e885b0c` | <https://github.com/openjdk/jdk25u> |
-| `alpine/busybox/` | the Alpine aport (APKBUILD, 44 patches, configs, support files) that built `busybox-static` | aports `c3ef5d10e6ef`, see its `ORIGIN.md` |
-| `alpine/openjdk25/` | the Alpine aport (APKBUILD, 4 patches) that built `openjdk25-jdk`/`-jmods`/`-jre-headless` | aports `5a749f43582a`, see its `ORIGIN.md` |
+| `alpine/busybox/` | the Alpine aport (APKBUILD, 44 patches, configs, support files) that built `busybox-static` | aports `c3ef5d10e6ef`, see its [`ORIGIN.md`](alpine/busybox/ORIGIN.md) |
+| `alpine/openjdk25/` | the Alpine aport (APKBUILD, 4 patches) that built `openjdk25-jdk`/`-jmods`/`-jre-headless` | aports `5a749f43582a`, see its [`ORIGIN.md`](alpine/openjdk25/ORIGIN.md) |
 | `index.json` | format `xvm-sources/1`: per component the tag, commit, the archive the build consumed (url, size, sha256), every committed file with its sha256, and how the tag was checked against the archive | |
 | `scripts/verify.sh` | re-checks gitlinks and file hashes against `index.json`; `--remote` asks the forks, `--locks <xvm>` checks the xvm lock files | |
 
